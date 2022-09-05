@@ -2,7 +2,7 @@
 
 cd ~/Code/cheatGit
 
-NUM_OF_ITERATIONS=$(($RANDOM % 4))
+NUM_OF_ITERATIONS=$(($RANDOM % 3 + 1))
 echo $NUM_OF_ITERATIONS
 
 function iterate {
@@ -22,7 +22,7 @@ function iterate {
 for i in {0..$NUM_OF_ITERATIONS}
   do
     echo $i
-    iterate
+    iterate &
   done
 
 exit 0
