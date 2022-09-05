@@ -17,7 +17,7 @@ function iterate {
   git push
 }
 
-for ((i = 0; i <=$NUM_OF_ITERATIONS ; i++ )); do
+for ((i = 0; i <$NUM_OF_ITERATIONS ; i++ )); do
     iterate 
   done
 
