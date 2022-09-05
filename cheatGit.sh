@@ -8,7 +8,7 @@ NOW=$(date)
 echo $NOW >> data.txt
 
 git add .
-git commit -m [["$NOW"]]
+git commit -m "$NOW"
 git push
 
 exit 0
