@@ -11,4 +11,6 @@ git add .
 git commit -m "$NOW"
 git push
 
+wait
+
 exit 0
