@@ -19,8 +19,8 @@ function iterate {
 
 for ((i = 0; i <=$NUM_OF_ITERATIONS ; i++ )); do
     echo $i
-    iterate &
-    wait
+    iterate 
+    # wait
   done
 
 exit 0
