@@ -1,16 +1,21 @@
 #!/usr/bin/bash
 
 cd ~/Code/cheatGit
-git pull
 
-NOW=$(date)
+function iteration {
+  git pull
 
-echo $NOW >> data.txt
+  NOW=$(date)
 
-git add .
-git commit -m "$NOW"
-git push
+  echo $NOW >> data.txt
 
-wait
+  git add .
+  git commit -m "$NOW"
+  git push
+
+  wait
+}
+
+iteration
 
 exit 0
