@@ -17,8 +17,7 @@ function iterate {
   git push
 }
 
-for i in {0..$NUM_OF_ITERATIONS}
-  do
+for ((i = 0; i <=$NUM_OF_ITERATIONS ; i++ )); do
     echo $i
     iterate &
     wait
