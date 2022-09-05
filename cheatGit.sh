@@ -2,10 +2,10 @@
 
 cd ~/Code/cheatGit
 
-NUM_OF_ITERATIONS=$(($RANDOM % 6))
+NUM_OF_ITERATIONS=$(($RANDOM % 4))
 echo $NUM_OF_ITERATIONS
 
-function iteration {
+function iterate {
   git pull
 
   NOW=$(date)
@@ -19,6 +19,9 @@ function iteration {
   wait
 }
 
-iteration
+for i in {0..$NUM_OF_ITERATIONS}
+  do
+    iterate
+  done
 
 exit 0
