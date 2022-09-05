@@ -13,7 +13,7 @@ function iterate {
   echo $NOW >> data.txt
 
   git add .
-  git commit -m "$NOW"
+  git commit -m "$NOW (x $NUM_OF_ITERATIONS)"
   git push
 
   wait
