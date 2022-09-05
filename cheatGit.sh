@@ -10,7 +10,7 @@ function iterate {
 
   NOW=$(date)
 
-  echo $NOW >> data.txt
+  echo "$NOW (x $NUM_OF_ITERATIONS)" >> data.txt
 
   git add .
   git commit -m "$NOW (x $NUM_OF_ITERATIONS)"
