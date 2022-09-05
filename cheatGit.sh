@@ -2,6 +2,9 @@
 
 cd ~/Code/cheatGit
 
+NUM_OF_ITERATIONS=$(($RANDOM % 6))
+echo $NUM_OF_ITERATIONS
+
 function iteration {
   git pull
 
