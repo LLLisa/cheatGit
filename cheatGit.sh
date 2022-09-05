@@ -15,14 +15,13 @@ function iterate {
   git add .
   git commit -m "$NOW (x $NUM_OF_ITERATIONS)"
   git push
-
-  wait
 }
 
 for i in {0..$NUM_OF_ITERATIONS}
   do
     echo $i
     iterate &
+    wait
   done
 
 exit 0
