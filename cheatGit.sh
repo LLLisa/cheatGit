@@ -21,6 +21,7 @@ function iterate {
 
 for i in {0..$NUM_OF_ITERATIONS}
   do
+    echo $i
     iterate
   done
 
