@@ -2,7 +2,7 @@
 
 cd ~/Code/cheatGit
 
-NUM_OF_ITERATIONS=$(($RANDOM % 3 + 1))
+NUM_OF_ITERATIONS=$(($RANDOM % 4))
 echo $NUM_OF_ITERATIONS
 
 function iterate {
