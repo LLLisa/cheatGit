@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-cd ~/Code/cheatGit
+cd ~/scripts/cheatGit
 
 NUM_OF_ITERATIONS=$(($RANDOM % 4))
 
