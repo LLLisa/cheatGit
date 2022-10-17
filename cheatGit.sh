@@ -3,9 +3,7 @@
 cd ~/scripts/cheatGit
 
 ARRAY_OF_ITERATION_VALUES=(0 0 0 3 5 6 9 11 12)
-NUM_OF_ITERATIONS=$(($RANDOM % 4))
-
-echo ${ARRAY_OF_ITERATION_VALUES[$(($RANDOM % 8))]}
+NUM_OF_ITERATIONS=${ARRAY_OF_ITERATION_VALUES[$(($RANDOM % 8))]}
 
 function iterate {
   git pull
