@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-cd ~/Code/cheatGit
+cd ~/scripts/cheatGit
 
 ITERATION_VALUES=(0 1 1 2 3 3 5 7 9)
 NUM_OF_ITERATIONS=${ITERATION_VALUES[$(($RANDOM % 9))]}
